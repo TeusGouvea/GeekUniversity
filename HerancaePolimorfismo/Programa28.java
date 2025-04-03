@@ -7,10 +7,10 @@ public class Programa28 {
 
     public static void main(String[] args) {
 
-        Pessoa p1 = new Pessoa("Matheus Gouvêa", 1995, "eu@mail.com");
-
-        System.out.println(p1);
-        System.out.println(p1.getNome());
+//     //   Pessoa p1 = new Pessoa("Matheus Gouvêa", 1995, "eu@mail.com");
+//
+//        System.out.println(p1);
+//        System.out.println(p1.getNome());
         System.out.println();
 
         Aluno a1 = new Aluno("Diana de Paula", 2022,"didi@mail.com", "123456");

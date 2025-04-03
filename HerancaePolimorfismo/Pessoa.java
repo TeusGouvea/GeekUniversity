@@ -7,7 +7,21 @@ package HerancaePolimorfismo;
 - Super classe
 - Classe genérica
 */
-public class Pessoa {
+
+//Agora como classe abstrata
+/*
+- Desta forma, impossibilita a criação de obejtos desta classe
+
+- Uma classe abstrata pode ter:
+  - atributos;
+  - Métodos;
+  - Métodos abstratos;
+
+ - Métodos abstratos:
+  - São métodos, que não possuem implementação, possuem apenas declaração, e, obrigatoriamente, as classes que herdam desta classe
+   com métodos abstrato, precisam implementar estes métodos
+*/
+public abstract class Pessoa {
 
     private String nome;
     private int ano_nascimento;
@@ -47,7 +61,7 @@ public class Pessoa {
 
     //Overrinding / Sobrescrita de método
     public String toString(){
-        return "Nome: " + this.nome + "\nAno Nascimento: " + this.ano_nascimento + "\nEmail: " + this.email;
+        return "Nome: " + this.nome + "\nAno Nascimento: " + this.ano_nascimento;
     }
 
     //Overloading / Sobrecarga de método
@@ -62,4 +76,7 @@ public class Pessoa {
     public void mensagem(String msg, int num){
         System.out.println(msg + num);
     }
+
+    //Declaração de um metodo abstrato
+    public abstract void outra_mensagem(String texto);
 }

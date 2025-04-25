@@ -7,9 +7,12 @@ CheckedExceptions: (Exceções Checadas) - Menos Perigosas
 - IOException
 - SQLException
 
-As exceções do tipo
+As exceções do tipo "checadas" fazem com que o programa não seja executado até que a determinada exceção seja tratada.
 
 Unchecked Exceptions: (Exceções Não Checadas) - Mais perigosas
 - RuntimeException
 - NullPointerException
 - ArrayOutOfBoundsException
+
+AS exceções do tipo "não checadas" só acontecem a execução do programa e desta forma não temos como saber, em grande parte dos casos, onde
+ela poderá ocorrer.

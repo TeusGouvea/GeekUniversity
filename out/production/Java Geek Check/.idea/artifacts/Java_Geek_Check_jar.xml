@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Java Geek Check:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_Geek_Check_jar</output-path>
+    <root id="archive" name="Java Geek Check.jar">
+      <element id="module-output" name="Java Geek Check" />
+    </root>
+  </artifact>
+</component>

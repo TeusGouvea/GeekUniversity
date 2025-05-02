@@ -11,8 +11,8 @@ import ModificadoresDeAcesso.Conta;
 public class Programa39 {
 
     public static void main(String[] args) {
-        Cliente cli1 = new Cliente("Kratos", "Rua dos bobos, 0");
-        Cliente cli2 = new Cliente("Leon", "Rua dos bobos, 10");
+        Cliente cli1 = new Cliente(18,"Kratos", "Rua dos bobos, 0");
+        Cliente cli2 = new Cliente(55,"Leon", "Rua dos bobos, 10");
 
         Conta c1 = new Conta(1, 200, 300, cli1);
         Conta c2 = new Conta(2, 200, 300, cli2);

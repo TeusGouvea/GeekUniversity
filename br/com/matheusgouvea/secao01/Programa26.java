@@ -10,7 +10,7 @@ public class Programa26 {
 
     public static void main(String[] args) {
 
-        Cliente cli = new Cliente("José Augusto", "Rua da mooca, 357");
+        Cliente cli = new Cliente(90,"José Augusto", "Rua da mooca, 357");
 
        // System.out.println("Nome: " + cli.nome);
         //System.out.println("Endereço: " + cli.endereco);

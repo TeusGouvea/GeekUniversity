@@ -8,12 +8,12 @@ Ou seja, só temos acesso ao atributo ou método privado dentro da própria clas
 public class Programa27 {
 
     public static void main(String[] args) {
-        Cliente cli1 = new Cliente("Zeus Gouvêa", "Rua dos bobos, 0");
+        Cliente cli1 = new Cliente(22,"Zeus Gouvêa", "Rua dos bobos, 0");
 
         System.out.println("Nome: " + cli1.getNome());
         System.out.println("Endereço: " + cli1.getEndereco());
 
-        Cliente cli2 = new Cliente("Paula Lorem", "Rua lá ele, 50");
+        Cliente cli2 = new Cliente(3,"Paula Lorem", "Rua lá ele, 50");
 
         System.out.println("Nome: " + cli2.getNome());
         System.out.println("Endereço: " + cli2.getEndereco());

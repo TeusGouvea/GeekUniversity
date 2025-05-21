@@ -7,12 +7,21 @@ public class Vetor {
     private int total = 0;
 
     public void adiciona(Aluno aluno){
+        this.garantirEspaco();
         this.alunos[total] = aluno;
         total = total + 1;
     }
 
     public void adiciona(int posicao, Aluno aluno){
-        this.alunos[posicao] = aluno;
+        this.garantirEspaco();
+        if (!posicaoOcupada(posicao)){
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        for (int i = total - 1; i >= posicao; i -=1){
+            alunos[i + 1] = alunos[i];
+        }
+        alunos[posicao] = aluno;
+        total++;
     }
 
     public Aluno pega(int posicao){
@@ -23,7 +32,10 @@ public class Vetor {
     }
 
     public void remove(int posicao){
-        this.alunos[posicao] = null;
+        for (int i = posicao; i < this.total; i++){
+            this.alunos[i] = this.alunos[i+1];
+        }
+        total--;
     }
 
     public boolean contem(Aluno aluno){
@@ -46,5 +58,19 @@ public class Vetor {
 
     private boolean posicaoOcupada(int posicao){
         return posicao >= 0 && posicao < total;
+    }
+
+    private void garantirEspaco(){
+        //Verifica se o array alunos está cheio
+        if (total == alunos.length){
+            //Caso esteja cheio, cria um novo com o dobro de tamanho do array anterior
+            Aluno novoArray[] = new Aluno[alunos.length*2];
+            //Copia os dados do arry anterior para o novo array
+            for (int i = 0; i < alunos.length; i++){
+                novoArray[i] = alunos[i];
+            }
+            //Por último atribuímos o novo array ao array original
+            this.alunos = novoArray;
+        }
     }
 }

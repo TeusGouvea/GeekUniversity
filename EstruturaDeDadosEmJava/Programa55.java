@@ -34,5 +34,15 @@ public class Programa55 {
         } catch (IllegalArgumentException e) {
             System.out.println("O aluno da posição 101 não existe");;
         }
+
+        Aluno a3 = new Aluno("Maria");
+        try {
+            lista.adiciona(101,a3);
+        }catch (IllegalArgumentException e ){
+            System.out.println("A posição 101 é inválida");
+        }
+        lista.remove(0);
+
+        System.out.println(lista);
     }
 }

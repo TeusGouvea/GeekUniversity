@@ -7,6 +7,8 @@ São estruturas de dados onde o elemento que está visível/disponível é o que
 Os elementos, ao serem adicionados em uma pilha, são adicionados sempre no topo.
 
 Para remover elementos da pilha, só podemos removero topo.
+
+O último elemento a entrar é o primeiro a sair.
 */
 
 public class Programa60 {

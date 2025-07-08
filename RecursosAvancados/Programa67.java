@@ -1,4 +1,4 @@
-package RecursosAvançados;
+package RecursosAvancados;
 //Default Methods
 public class Programa67 {
 

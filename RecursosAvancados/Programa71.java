@@ -1,18 +1,17 @@
-package RecursosAvançados;
+package RecursosAvancados;
 
-//Classes Anônimas
+//Lambdas
 /*
-Classes anônimas são classes sem nome.
+Expressões lambdas, sãofunções anônimas.
 */
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
-public class Programa69 {
+public class Programa71 {
 
     public static void main(String[] args) {
-
         List<String> palavras = new ArrayList<String>();
 
         Comparator<String> comparador = new ComparadorPorTamanho();
@@ -26,14 +25,14 @@ public class Programa69 {
 
         palavras.sort(comparador);
 
-        Consumer<String> consumidor = new Consumer<String>() {
+        //Expressão lambda-forma 1
+//        palavras.forEach((String s) ->{
+//            System.out.println(s);
+//        });
 
-            @Override
-            public void accept(String s) {
-                System.out.println(s);
-            }
-        };
-
-        palavras.forEach(consumidor);
+        //Expressão lambda-forma 2
+        palavras.forEach(s ->
+            System.out.println(s)
+        );
     }
 }

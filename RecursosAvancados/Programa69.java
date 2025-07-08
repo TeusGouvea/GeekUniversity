@@ -1,14 +1,18 @@
-package RecursosAvançados;
+package RecursosAvancados;
 
-//Lambdas
-
+//Classes Anônimas
+/*
+Classes anônimas são classes sem nome.
+*/
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 
-public class Programa71 {
+public class Programa69 {
 
     public static void main(String[] args) {
+
         List<String> palavras = new ArrayList<String>();
 
         Comparator<String> comparador = new ComparadorPorTamanho();
@@ -22,8 +26,14 @@ public class Programa71 {
 
         palavras.sort(comparador);
 
-        palavras.forEach((String s) ->{
-            System.out.println(s);
-        });
+        Consumer<String> consumidor = new Consumer<String>() {
+
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+
+        palavras.forEach(consumidor);
     }
 }

@@ -1,4 +1,4 @@
-package RecursosAvançados;
+package RecursosAvancados;
 
 public class MinhaClasse implements Teste{
 

@@ -1,4 +1,4 @@
-package RecursosAvançados;
+package RecursosAvancados;
 
 /*
 A gente está criando nosso próprio comparador de objetos (Strings), para que seja possível, desta forma ordenar a string pelo seu tamanho ao invés de ordem alfabética.

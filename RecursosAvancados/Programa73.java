@@ -6,8 +6,7 @@ Expressões lambdas, são funções anônimas, ou seja funções sem nome.
 
 Já sabemos que podemos utilizar expressões lambdas com interfaces funcionais.
 
-Devemos então criar uma função lambdacompatível com a função da interface que estivermos utilizando.
-,
+Devemos então criar uma função lambdacompatível com a função da interface que estivermos util
 */
 import java.util.ArrayList;
 import java.util.List;
